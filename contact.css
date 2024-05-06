@@ -1,0 +1,259 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body,html{
+      background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    user-select: none !important;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    overflow: hidden !important;
+  }
+  @font-face {
+    font-family: vega;
+    src: url(/main/Dolce\ &\ Amyara.otf);
+  }
+  
+  #cam{
+      display: flex;
+      align-items: center;
+  justify-content: center;
+      left: 0%;
+      position: fixed;
+      height: 125vh;
+      width: 60vw;
+  }
+  #main-form {
+    height: 100vh;
+    width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: 0;
+        right: 0;
+        position: absolute;
+        
+      }
+  .form {
+    --input-focus: #2d8cf0;
+    --font-color: #fefefe;
+    --font-color-sub: #7e7e7e;
+    --bg-color: #000;
+    --main-color: #fefefe;
+    padding: 20px;
+  width: 400px;
+    background: black;
+  
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      box-shadow: 8px 8px var(--main-color) ;
+    }
+    
+    nav{ 
+      font-family: "vega";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 4px;
+    color: white;
+    font-size: 1.5rem;
+    }
+    .title {
+      color: var(--font-color);
+      font-weight: 900;
+      font-size: 25px;
+      margin-bottom: 25px;
+      font-family:monospace;
+    }
+    
+    .title span {
+      color: var(--font-color-sub);
+      font-weight: 900;
+      font-size: 28px;
+    }
+    .input {
+      width: 250px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 8px 8px var(--main-color);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--font-color);
+      padding: 5px 10px;
+      font-family:monospace;
+      outline: none;
+    }
+    .input-msg{
+      width: 250px;
+      height: 80px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 8px 8px var(--main-color);
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--font-color);
+      padding: 5px 10px;
+      font-family:monospace;
+      outline: none;
+    }
+    
+    .input-msg>::placeholder{
+      top: 0%;
+      position: fixed;
+      color: var(--font-color-sub);
+      opacity: 0.8;
+    }
+    .input-msg:focus {
+      border: 2px solid var(--input-focus);
+    }
+    .input::placeholder {
+      color: var(--font-color-sub);
+      opacity: 0.8;
+    }
+    .input:focus {
+      border: 2px solid var(--input-focus);
+    }
+    .login-with {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      transform: translate(0px, 0px);
+    }
+    .button-log {
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 4px 4px var(--main-color);
+      color: var(--font-color);
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .icon {
+      width: 24px;
+      height: 24px;
+      fill: var(--main-color);
+    }
+    
+    .button-log:active, .button-confirm:active {
+      box-shadow: 0px 0px var(--main-color);
+      transform: translate(3px, 3px);
+    }
+    #buttons{
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+    .button-confirm {
+      margin: 50px auto 0 auto;
+      width: 120px;
+      height: 40px;
+      border-radius: 5px;
+      border: 2px solid var(--main-color);
+      background-color: var(--bg-color);
+      box-shadow: 4px 4px var(--main-color);
+      font-size: 17px;
+      font-weight: 600;
+      color: var(--font-color);
+      cursor: pointer;
+      font-family:monospace;
+    }
+  
+    .blue-ball {
+      box-shadow: rgb(250, 250, 250) 0px 0px 100px -30px inset, rgba(86, 154, 255, 0.7) 0px 0px max(70px, 8vw) max(70px, 8vw) inset, rgba(86, 154, 255, 0.7) 0px 0px 120px 80px;
+      aspect-ratio: 1 / 1;
+      position: fixed;
+      border-radius: 50%;
+      background-color: rgb(250, 250, 250);
+      filter: blur(4px);
+      width: min(1300px, 100%);
+      bottom: max(-800px, -50vw);
+      left: max(-800px, -50vw);
+      z-index: 1;
+      opacity: 0.6;
+  }
+  
+  .green-ball {
+    aspect-ratio: 1 / 1;
+    position: fixed;
+    border-radius: 50%;
+    background-color: rgb(250, 250, 250);
+    filter: blur(4px);
+    width: min(1300px, 100%);
+    top: max(-800px, -50vw);
+    right: max(-800px, -50vw);
+    z-index: 1;
+    opacity: 0.6;
+    box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(255, 109, 109) 0px 0px 30vw 30vw inset, rgb(255, 109, 109) 0px 0px 70px 40px;
+  }
+    @media (max-width:1000px) {
+      #cam{
+      display: none;  
+    }
+  
+    #main-form {
+      height: 100vh;
+      width: 100vw;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          top: 0;
+          right: 0;
+          position: absolute;
+          
+        }
+        .form{
+          width: 300px;
+        }
+        .blue-ball {
+          box-shadow: rgb(250, 250, 250) 0px 0px 100px -30px inset, rgba(86, 154, 255, 0.7) 0px 0px max(70px, 8vw) max(70px, 8vw) inset, rgba(86, 154, 255, 0.7) 0px 0px 120px 80px;
+          aspect-ratio: 1 / 1;
+          position: fixed;
+          border-radius: 50%;
+          background-color: rgb(250, 250, 250);
+          filter: blur(4px);
+          width: min(1440px, 100%);
+          bottom: max(-720px, -50vw);
+          left: max(-720px, -50vw);
+          z-index: 1;
+          opacity: 0.6;
+      }
+      
+      .green-ball {
+        aspect-ratio: 1 / 1;
+        position: fixed;
+        border-radius: 50%;
+        background-color: rgb(250, 250, 250);
+        filter: blur(4px);
+        width: min(1440px, 100%);
+        top: max(-720px, -50vw);
+        right: max(-720px, -50vw);
+        z-index: 1;
+        opacity: 0.6;
+        box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(136, 223, 171) 0px 0px max(70px, 12vw) max(70px, 12vw) inset, rgb(136, 223, 171) 0px 0px 70px 40px;
+      }
+        
+    }

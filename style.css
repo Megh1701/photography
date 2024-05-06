@@ -2,6 +2,10 @@
   font-family: gillroy;
   src: url(./Gilroy-Bold.ttf);
 }
+@font-face {
+  font-family: "vega";
+  src: url(/main/vega);
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -60,7 +64,7 @@ user-select: none !important;
   gap: 10px;
   padding: 0px 0px;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family: "vega";
   font-weight: 500;
   margin-bottom: 0%;
   padding-top: 0.5vw;
@@ -75,7 +79,7 @@ user-select: none !important;
   gap: 10px;
   padding: 0px 0px;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+  font-family:"vega";
   font-weight: 500;
   margin-bottom: 0%;
   padding-top: 0.5vw;
@@ -89,7 +93,7 @@ user-select: none !important;
   gap: 10px;
   padding: 0px 0px;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+ font-family:"vega";
   font-weight: 500;
   margin-bottom: 0%;
   padding-top: 0.5vw;
@@ -103,7 +107,7 @@ user-select: none !important;
   gap: 10px;
   padding: 0px 0px;
   text-transform: uppercase;
-  font-family: Montserrat, sans-serif;
+ font-family:"vega";
   font-weight: 500;
   margin-bottom: 0%;
   padding-top: 0.5vw;
